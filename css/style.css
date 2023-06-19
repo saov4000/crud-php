@@ -1,0 +1,30 @@
+*{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+.dados{
+    margin: auto;
+    width:300px;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    width: 70px;
+    padding: 10px;
+}
+
+table,th,td{
+    border: solid 1px;
+    border-collapse: collapse;
+}
+
+table{
+    margin: auto;
+}
