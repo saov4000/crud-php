@@ -23,7 +23,7 @@
 <body>
     <h1>Atualização de Cadastro</h1>
     <div class="dados">
-    <form action="atualizar.php" method="post">
+    <form action="atualizar.php" method="post" onsubmit="return confirm('Tem certeza que deseja atualizar?');">
         <input type="hidden" name="id" value="<?php echo $id; ?>">
         Nome:<br>
         <input type="text" name="nome" value="<?php echo $nome; ?>"><br>

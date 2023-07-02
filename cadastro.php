@@ -10,7 +10,7 @@
 <body>
     <h1>Cadastro</h1>
     <div class="dados">
-    <form action="cadastrar.php" method="post">
+    <form action="cadastrar.php" method="post" onsubmit="return confirm('Deseja realmente cadastrar?');">
         Nome:<br>
         <input type="text" name="nome"><br>
         Sexo:<br>

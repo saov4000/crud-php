@@ -16,8 +16,6 @@ a{
     text-decoration: none;
     display: block;
     margin: auto;
-    width: 70px;
-    padding: 10px;
 }
 
 table,th,td{
@@ -27,4 +25,9 @@ table,th,td{
 
 table{
     margin: auto;
+}
+.cad{
+    margin: auto;
+    width: 200px;
+    text-align:center;
 }

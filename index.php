@@ -9,7 +9,10 @@
 </head>
 <body>
     <h1>Lista de Alunos</h1>
-    <a href="cadastro.php">Cadastrar</a>
+    <div class="cad">
+        <button><a href="cadastro.php">Cadastrar</a></button>
+    </div>
+    <hr>
     <table>
         <tr>
             <th>Código</th>
@@ -28,9 +31,14 @@
                     <td>".$row["nome"]."</td>
                     <td>".$row["sexo"]."</td>
                     <td>".$row["cidade"]."</td>
-                    <td><a href='atualiza.php?id=$id'>Atualizar</a></td>
-                    <td><a href='excluir.php?id=$id'>Apagar</a></td>
-                </tr>";
+                    <td><button><a href='atualiza.php?id=$id'>Atualizar</a></button></td>
+                    <td>";
+                    ?>
+                    <form action="excluir.php" method="post" onsubmit="return confirm('Tem certeza que deseja atualizar?','texto')">
+                        <input type="text" name="id" value="<?php echo $id; ?>" hidden>
+                        <button type="submit"><a>Excluir</a></button>
+                    </form>
+                    <?php echo "</td></tr>";
             }
         ?>
     </table>
